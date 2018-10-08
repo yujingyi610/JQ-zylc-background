@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+		<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="zylc/js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="zylc/js/common/variable.js" ></script><!--全局变量-->
+		<script type="text/javascript" src="zylc/js/common/fileupload.js" ></script><!--文件上传-->
+ </head>
+ <body>
+ <img alt="pic" src="" id="showpic">
+  <form method="post" action="http://10.100.25.126:8110//file/upload/api" id="myForm" enctype="multipart/form-data">
+  <input type="file" name="upfile" id="upfile">
+  <input type="submit" value="保存">
+ </form> 
+
+  <input type="submit" value="Ajax提交" onclick="fileupload('showpic','upfile')">
+ </body>
+</html>

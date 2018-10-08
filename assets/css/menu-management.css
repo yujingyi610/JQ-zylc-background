@@ -1,0 +1,19 @@
+li:before{
+	display: none;
+}
+.sousuo{
+	border-radius: 4px;
+	width: 45px;
+	height: 28px;
+	font-size: 12px;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	text-align: center;
+	padding-top: 2px;
+	margin: 0;
+}
+.sousuo a{
+	color:rgba(136, 136, 136, 1);
+	text-decoration: none;
+	outline: none;
+}

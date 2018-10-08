@@ -1,0 +1,32 @@
+.main-content-inner{
+	overflow-x: hidden;
+}
+.breadcrumbs{
+	border: none;
+	background: none;
+} 
+.bu-news{
+	margin-left: 20px;
+	display: inline-block;
+}
+.new-building{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	float: right;
+}
+.new-building a{
+	color: #101010;
+	outline: none;
+	text-decoration: none;
+}
+.table>tbody>tr>td{   
+	border-top: none;
+	border-bottom: 1px solid #ddd;
+}

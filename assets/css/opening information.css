@@ -1,0 +1,116 @@
+*{
+	list-style: none;
+}
+/*.main-content-inner{
+	overflow-x: hidden;
+}*/
+.main-container{
+	overflow: hidden;
+}
+.bu-news{
+	margin-left: 20px;
+	display: inline-block;
+}
+.breadcrumbs{
+	border: none;
+	background: none;
+} 
+.new-building{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	float: right;
+	margin-top: 10px;
+}
+.new-building a{
+	color: #101010;
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+.hidden-480 ul li{
+	float: left;
+	text-align: center;
+}
+.hidden-480 a{
+	text-decoration: none;
+	margin-right: 9px;
+	height: 23px;
+	line-height: 20px;
+	color: rgba(63, 81, 181, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Roboto;
+	cursor: pointer;
+
+}
+.hidden-480{
+	width: 200px;
+}
+thead th{
+	text-align: center;
+}
+tbody td{
+	text-align: center;
+}
+/*开盘信息*/
+.opening-information{
+	margin: 0 auto;
+	width: 410px;
+	height: 289px;
+	line-height: 20px;
+	text-align: center;
+	border: 1px solid rgba(187, 187, 187, 1);
+	margin-bottom: 40px;
+	background: #fff;
+	z-index: 120;
+	position: absolute;
+	top: 10px;
+	left: 30%;
+	display: none;
+}
+.table>tbody>tr>td{   
+	border-top: none;
+}
+.font-color{
+	color: rgba(16, 16, 16, 1);
+	font-size: 10px;
+	font-family: Roboto;
+}
+.submit{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	margin: 0 auto;
+	cursor: pointer;
+}
+ .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: #666;
+  opacity: 0.5;
+  filter: alpha(opacity=50)-moz-opacity: 0.5;
+  display: none;
+}
+.oi-del{
+	display: inline-block;
+	float: right;
+	margin-right: 15px;
+	cursor: pointer;
+}

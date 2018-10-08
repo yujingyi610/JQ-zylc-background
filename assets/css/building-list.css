@@ -1,0 +1,153 @@
+*{
+	list-style:none ;
+	outline: none; 
+	text-decoration: none;
+}
+.main-content-inner{
+	overflow-x: hidden;
+}
+/*左侧列表*/
+.nav-list{
+	left: 0px;
+	top: 55px;
+	width: 150px;
+	height: 744px;
+	line-height: 20px;
+	border: 1px solid rgba(187, 187, 187, 1);
+}
+.menu-text{
+	margin-left: 8px;
+}
+/*ulli字体*/
+.breadcrumb{
+	font-size: 14px;
+}
+/*切合*/
+#sidebar{
+	width: 150px;
+}
+.breadcrumb>li+li:before{
+	display: none;
+}
+.sidebar+.main-content{
+	margin-left: 150px;
+}
+/*下拉框*/
+.select-content{
+	left: 772px;
+	top: 75px;
+	width: 98px;
+	height: 30px;
+	line-height: 20px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	border-radius: 4px;
+}
+.input{
+	width: 209px;
+	height: 28px;
+	left: 479px;
+	top: 76px;
+	border-radius: 4px;
+	color: rgba(136, 136, 136, 1);
+	font-size: 12px;
+	text-align: left;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+}
+.active{
+	border-radius:4px ;
+}
+.sousuo{
+	border-radius: 4px;
+	width: 45px;
+	height: 28px;
+	font-size: 12px;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	text-align: center;
+	padding-top: 2px;
+	margin: 0;
+}
+.sousuo a{
+	color:rgba(136, 136, 136, 1);
+	text-decoration: none;
+	outline: none;
+}
+/*新建楼盘*/
+.new-building{
+	left: 1322px;
+	top: 120px;
+	width: 80px;
+	height: 30px;
+	border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	float: right;
+	margin: 10px;
+	padding-top: 2px;
+}
+.new-building a{
+	color: #101010;
+	outline: none;
+	text-decoration: none;
+}
+/*主页面*/
+.ace-content{
+	clear: both;
+	width:100% ;
+	padding: 0;
+	
+}
+.container{
+	width: 100%;
+	margin-top: 30px;
+}
+#simple-table tbody td{
+	padding: 15px;
+}
+#simple-table tbody tr{
+	width: 100%;
+} 
+.td-ul li{
+	float: left;
+	margin: 3px;;
+}
+.td-ul li a{
+	outline: none;
+	text-decoration: none;
+}
+.first-line{
+	text-align: center;
+	vertical-align: middle;
+}
+.fa-caret-right{
+	margin-right: 3px;
+}
+.row{
+	clear: both;
+}
+.one{
+	width: 213px;
+}
+.hidden-480 li{
+	float:left;
+}
+.hidden-480 li a{
+	text-decoration: none;
+	margin: 0 5px 0 3px;
+	display: inline-block;
+}
+.table>thead:first-child>tr:first-child>th {
+    text-align: center;
+}
+.table-bordered>tbody>tr>td{
+	text-align: center;
+	vertical-align: middle;
+}
+/*=================*/

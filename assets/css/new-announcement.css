@@ -1,0 +1,38 @@
+*{
+	list-style:none ;
+}
+.main-content-inner{
+	overflow-x: hidden;
+}
+.bu-new li{
+	margin: 15px 0 15px 0;
+}
+.introduction{
+	position: absolute;
+	top:100px;
+	left: 40px;
+}
+.textarea{
+	position: relative; 
+	width:200px;
+	height:31px;
+	padding-top:2px;
+	font-size:14px;
+	margin-left: 39px;
+}
+.markdown{
+	margin-left: 400px;
+}
+.markdown li{
+	float: left;
+	width: 96px;
+	height: 30px;
+	line-height: 27px;
+	border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	margin:0 10px 0 10px;
+}

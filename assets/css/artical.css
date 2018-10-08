@@ -1,0 +1,114 @@
+*{
+	list-style: none;
+}
+ a:hover{
+ 	text-decoration: none; 
+   cursor: pointer;
+}
+th{
+	text-align: center;
+}
+.header-ul li{
+	float: left;
+	margin-right:10px ;
+	padding-bottom: 20px;
+}
+.sousuo{
+	display: inline-block;
+	width: 45px;
+	height: 28px;
+	border-radius: 4px;
+	color:rgba(136,136,136,1) ;
+	font-size: 12px;
+	text-align: center;
+	font-family: "microsoft yahei";
+	border: 1px solid rgba(187,187,187,1);
+	line-height: 26px;
+	cursor: pointer;
+}
+.select-choose{
+	left: 772px;
+	top: 75px;
+	width: 98px;
+	height: 30px;
+	line-height: 20px;
+	color: rgba(16,16,16,1);
+	font-size: 14px;
+	font-family: "microsoft yahei";
+	border: 1px solid rgba(187,187,187,1);
+	border-radius: 4px;
+}
+.spacing{
+	/*margin-right: 5px;*/
+}
+.spacing-input{
+	width: 209px;
+	height: 28px;
+}
+.forwarding{
+	width: 100px;
+}
+.link{
+	width: 320px;
+	height:270px;
+	border: 1px solid rgba(187, 187, 187, 1);
+	margin: auto;
+}
+.link p{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.link-input{
+	width:230px;
+	height: 30px;
+	border:  1px solid rgba(187, 187, 187, 1);
+	margin: 0 auto;
+	text-align:center;
+	line-height:30px;
+}
+.copy{
+	width: 98px;
+	height: 30px;
+	border: 1px solid rgba(187, 187, 187, 1);
+	line-height: 30px;
+	margin: 0 auto;
+}
+/*====================*/
+.pageTest{
+	height: 200px;
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 80px;
+}
+tbody td{
+	text-align: center;
+}
+.new-building{
+	width: 80px;
+	height: 30px;
+	border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	float: right;
+	margin: 10px;
+	padding-top: 2px;
+}
+.new-building a{
+	color: #101010;
+	outline: none;
+	text-decoration: none;
+}
+/*==========================活动管理====*/
+.activity-ul li{
+	float: left;
+	margin-right:20px ;
+	padding-bottom: 20px;
+}
+.table-hover{
+	margin-bottom: 110px;
+}
+/*===================================发起活动=============*/

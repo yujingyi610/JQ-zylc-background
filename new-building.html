@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>置业绿城-新增楼盘</title>
+
+		<meta name="description" content="with selectable elements and custom icons" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+		<!-- page specific plugin styles -->
+
+		<!-- text fonts -->
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+
+		<!-- ace styles -->
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+
+		<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/new-building.css" />
+ 		<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+
+		<!-- inline styles related to this page -->
+
+		<!-- ace settings handler -->
+		<script src="assets/js/ace-extra.min.js"></script>
+
+		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+
+		<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default ace-save-state">
+				<div class="navbar-header pull-left">
+					<a href="index.html" class="navbar-brand">
+						<small>
+							<i class="fa fa-leaf"></i>
+							置业绿城
+						</small>
+					</a>
+				</div>
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="light-blue dropdown-modal">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason
+								</span>
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+		<div class="main-container ace-save-state" id="main-container">
+			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+				<ul class="nav nav-list">
+					<li class=" "> 
+						<a href="#">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 工作台 </span>
+						</a>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<!--<i class="fa fa-briefcase fa-lg" ></i>-->
+							<i class="menu-icon fa fa-caret-right"></i>
+							<span class="menu-text">
+								楼盘列表
+							</span>
+							<b class="arrow fa fa-angle-down" ></b>
+						</a>
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="">
+								<a href="profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									楼盘列表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									楼盘标签
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="search.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									板块排序
+								</a>
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-list"></i>
+							<span class="menu-text"> 文章管理 </span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text"> 活动管理</span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="#">
+							<i class="menu-icon fa fa-list-alt"></i>
+							<span class="menu-text"> 预约列表 </span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="#">
+							<i class="menu-icon fa fa-calendar"></i>
+							<span class="menu-text">
+								用户管理
+							</span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-picture-o"></i>
+							<span class="menu-text"> 首页管理</span>
+							<b class="arrow fa fa-angle-down" ></b>
+						</a>
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="">
+								<a href="profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									User Profile
+								</a>
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Timeline
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="search.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Search Results
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tag"></i>
+							<span class="menu-text"> 搜索管理</span>
+						</a>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-file-o"></i>
+							<span class="menu-text">
+								系统管理
+							</span>
+						</a>
+					</li>
+					<li class="">
+						<a href="#">
+							<i class="menu-icon fa fa-list-alt"></i>
+							<span class="menu-text"> 绿粉汇</span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+			</div>
+<!--================================================================================-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="page-content">
+						<div class="page-header">
+							新增楼盘
+						</div><!-- /.page-header -->
+						<div class="row">
+							<div class="col-xs-12">
+								<!---->
+								<form class="form-horizontal" role="form">
+									<div class="space-4"></div>
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-2">楼盘名称： </label>
+
+										<div class="col-sm-9">
+											<input type="password" id="form-field-2" placeholder="请输入楼盘名称" class="col-xs-10 col-sm-5" />
+											<span class="help-inline col-xs-12 col-sm-7">
+												<!--<span class="middle">Inline help text</span>-->
+											</span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-4">选择项目：</label>
+										<div class="col-sm-9">
+											<select class="select-content" value="selse" >
+												<option value="全部">请选择城市公司</option>
+												<option value="已发布">浙江城市公司</option>
+												<option value="未发布">绿城中国</option>
+											</select>
+											<span class="select-span">请区确保销管系统中有该项目</span>
+											<select class="select-content" value="selse" >
+												<option value="全部">请选择项目</option>
+												<option value="已发布">义务桃花源</option>
+												<option value="未发布">桂语兰亭</option>
+											</select>	
+											<span class="select-st">请区确保OA中有相关人员</span>
+										</div>
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-5">选择项目中运营负责人：</label>
+										<div class="col-sm-9">
+											<select class="select-content" value="selse" >
+												<option value="全部">请选择人员</option>
+												<option value="已发布">已发布</option>
+												<option value="未发布">未发布</option>
+											</select>	
+										</div>	
+									</div>
+									<div class="space-4"></div>
+										<!--                  楼盘亮点-->	
+							<div class="form-group">
+							<div class="space-4"></div>
+									<div class="clearfix form-actions">
+										<div class="col-md-offset-3 col-md-9">
+											<button class="btn btn-info" type="button">
+												<i class="ace-icon fa fa-check bigger-110"></i>
+												保存
+											</button>
+											&nbsp; &nbsp; &nbsp;
+											<button class="btn" type="reset">
+												<i class="ace-icon fa fa-undo bigger-110"></i>
+												返回
+											</button>
+										</div>
+									</div>
+								</div>
+								<!-- PAGE CONTENT BEGINS -->
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="widget-box widget-color-blue2">
+											<div class="widget-header">
+												<h4 class="widget-title lighter smaller">Choose Categories</h4>
+											</div>
+											<div class="widget-body">
+												<div class="widget-main padding-8">
+													<ul id="tree1"></ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- PAGE CONTENT ENDS -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.page-content -->
+				</div>
+			</div><!-- /.main-content -->
+
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+		<script src="assets/js/tree.min.js"></script>
+
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			jQuery(function($){	var sampleData = initiateDemoData();//see below	$('#tree1').ace_tree({		dataSource: sampleData['dataSource1'],		multiSelect: true,		cacheItems: true,		'open-icon' : 'ace-icon tree-minus',		'close-icon' : 'ace-icon tree-plus',		'itemSelect' : true,		'folderSelect': false,		'selected-icon' : 'ace-icon fa fa-check',		'unselected-icon' : 'ace-icon fa fa-times',		loadingHTML : '<div class="tree-loading"><i class="ace-icon fa fa-refresh fa-spin blue"></i></div>'	});		$('#tree2').ace_tree({		dataSource: sampleData['dataSource2'] ,		loadingHTML:'<div class="tree-loading"><i class="ace-icon fa fa-refresh fa-spin blue"></i></div>',		'open-icon' : 'ace-icon fa fa-folder-open',		'close-icon' : 'ace-icon fa fa-folder',		'itemSelect' : true,		'folderSelect': true,		'multiSelect': true,		'selected-icon' : null,		'unselected-icon' : null,		'folder-open-icon' : 'ace-icon tree-plus',		'folder-close-icon' : 'ace-icon tree-minus'	});			/**	//Use something like this to reload data		$('#tree1').find("li:not([data-template])").remove();	$('#tree1').tree('render');	*/			/**	//please refer to docs for more info	$('#tree1')	.on('loaded.fu.tree', function(e) {	})	.on('updated.fu.tree', function(e, result) {	})	.on('selected.fu.tree', function(e) {	})	.on('deselected.fu.tree', function(e) {	})	.on('opened.fu.tree', function(e) {	})	.on('closed.fu.tree', function(e) {	});	*/			function initiateDemoData(){		var tree_data = {			'for-sale' : {text: 'For Sale', type: 'folder'}	,			'vehicles' : {text: 'Vehicles', type: 'folder'}	,			'rentals' : {text: 'Rentals', type: 'folder'}	,			'real-estate' : {text: 'Real Estate', type: 'folder'}	,			'pets' : {text: 'Pets', type: 'folder'}	,			'tickets' : {text: 'Tickets', type: 'item'}	,			'services' : {text: 'Services', type: 'item'}	,			'personals' : {text: 'Personals', type: 'item'}		}		tree_data['for-sale']['additionalParameters'] = {			'children' : {				'appliances' : {text: 'Appliances', type: 'item'},				'arts-crafts' : {text: 'Arts & Crafts', type: 'item'},				'clothing' : {text: 'Clothing', type: 'item'},				'computers' : {text: 'Computers', type: 'item'},				'jewelry' : {text: 'Jewelry', type: 'item'},				'office-business' : {text: 'Office & Business', type: 'item'},				'sports-fitness' : {text: 'Sports & Fitness', type: 'item'}			}		}		tree_data['vehicles']['additionalParameters'] = {			'children' : {				'cars' : {text: 'Cars', type: 'folder'},				'motorcycles' : {text: 'Motorcycles', type: 'item'},				'boats' : {text: 'Boats', type: 'item'}			}		}		tree_data['vehicles']['additionalParameters']['children']['cars']['additionalParameters'] = {			'children' : {				'classics' : {text: 'Classics', type: 'item'},				'convertibles' : {text: 'Convertibles', type: 'item'},				'coupes' : {text: 'Coupes', type: 'item'},				'hatchbacks' : {text: 'Hatchbacks', type: 'item'},				'hybrids' : {text: 'Hybrids', type: 'item'},				'suvs' : {text: 'SUVs', type: 'item'},				'sedans' : {text: 'Sedans', type: 'item'},				'trucks' : {text: 'Trucks', type: 'item'}			}		}		tree_data['rentals']['additionalParameters'] = {			'children' : {				'apartments-rentals' : {text: 'Apartments', type: 'item'},				'office-space-rentals' : {text: 'Office Space', type: 'item'},				'vacation-rentals' : {text: 'Vacation Rentals', type: 'item'}			}		}		tree_data['real-estate']['additionalParameters'] = {			'children' : {				'apartments' : {text: 'Apartments', type: 'item'},				'villas' : {text: 'Villas', type: 'item'},				'plots' : {text: 'Plots', type: 'item'}			}		}		tree_data['pets']['additionalParameters'] = {			'children' : {				'cats' : {text: 'Cats', type: 'item'},				'dogs' : {text: 'Dogs', type: 'item'},				'horses' : {text: 'Horses', type: 'item'},				'reptiles' : {text: 'Reptiles', type: 'item'}			}		}		var dataSource1 = function(options, callback){			var $data = null			if(!("text" in options) && !("type" in options)){				$data = tree_data;//the root tree				callback({ data: $data });				return;			}			else if("type" in options && options.type == "folder") {				if("additionalParameters" in options && "children" in options.additionalParameters)					$data = options.additionalParameters.children || {};				else $data = {}//no data			}						if($data != null)//this setTimeout is only for mimicking some random delay				setTimeout(function(){callback({ data: $data });} , parseInt(Math.random() * 500) + 200);			//we have used static data here			//but you can retrieve your data dynamically from a server using ajax call			//checkout examples/treeview.html and examples/treeview.js for more info		}		var tree_data_2 = {			'pictures' : {text: 'Pictures', type: 'folder', 'icon-class':'red'}	,			'music' : {text: 'Music', type: 'folder', 'icon-class':'orange'}	,			'video' : {text: 'Video', type: 'folder', 'icon-class':'blue'}	,			'documents' : {text: 'Documents', type: 'folder', 'icon-class':'green'}	,			'backup' : {text: 'Backup', type: 'folder'}	,			'readme' : {text: '<i class="ace-icon fa fa-file-text grey"></i> ReadMe.txt', type: 'item'},			'manual' : {text: '<i class="ace-icon fa fa-book blue"></i> Manual.html', type: 'item'}		}		tree_data_2['music']['additionalParameters'] = {			'children' : [				{text: '<i class="ace-icon fa fa-music blue"></i> song1.ogg', type: 'item'},				{text: '<i class="ace-icon fa fa-music blue"></i> song2.ogg', type: 'item'},				{text: '<i class="ace-icon fa fa-music blue"></i> song3.ogg', type: 'item'},				{text: '<i class="ace-icon fa fa-music blue"></i> song4.ogg', type: 'item'},				{text: '<i class="ace-icon fa fa-music blue"></i> song5.ogg', type: 'item'}			]		}		tree_data_2['video']['additionalParameters'] = {			'children' : [				{text: '<i class="ace-icon fa fa-film blue"></i> movie1.avi', type: 'item'},				{text: '<i class="ace-icon fa fa-film blue"></i> movie2.avi', type: 'item'},				{text: '<i class="ace-icon fa fa-film blue"></i> movie3.avi', type: 'item'},				{text: '<i class="ace-icon fa fa-film blue"></i> movie4.avi', type: 'item'},				{text: '<i class="ace-icon fa fa-film blue"></i> movie5.avi', type: 'item'}			]		}		tree_data_2['pictures']['additionalParameters'] = {			'children' : {				'wallpapers' : {text: 'Wallpapers', type: 'folder', 'icon-class':'pink'},				'camera' : {text: 'Camera', type: 'folder', 'icon-class':'pink'}			}		}		tree_data_2['pictures']['additionalParameters']['children']['wallpapers']['additionalParameters'] = {			'children' : [				{text: '<i class="ace-icon fa fa-picture-o green"></i> wallpaper1.jpg', type: 'item'},				{text: '<i class="ace-icon fa fa-picture-o green"></i> wallpaper2.jpg', type: 'item'},				{text: '<i class="ace-icon fa fa-picture-o green"></i> wallpaper3.jpg', type: 'item'},				{text: '<i class="ace-icon fa fa-picture-o green"></i> wallpaper4.jpg', type: 'item'}			]		}		tree_data_2['pictures']['additionalParameters']['children']['camera']['additionalParameters'] = {			'children' : [				{text: '<i class="ace-icon fa fa-picture-o green"></i> photo1.jpg', type: 'item'},				{text: '<i class="ace-icon fa fa-picture-o green"></i> photo2.jpg', type: 'item'},				{text: '<i class="ace-icon fa fa-picture-o green"></i> photo3.jpg', type: 'item'},				{text: '<i class="ace-icon fa fa-picture-o green"></i> photo4.jpg', type: 'item'},				{text: '<i class="ace-icon fa fa-picture-o green"></i> photo5.jpg', type: 'item'},				{text: '<i class="ace-icon fa fa-picture-o green"></i> photo6.jpg', type: 'item'}			]		}		tree_data_2['documents']['additionalParameters'] = {			'children' : [				{text: '<i class="ace-icon fa fa-file-text red"></i> document1.pdf', type: 'item'},				{text: '<i class="ace-icon fa fa-file-text grey"></i> document2.doc', type: 'item'},				{text: '<i class="ace-icon fa fa-file-text grey"></i> document3.doc', type: 'item'},				{text: '<i class="ace-icon fa fa-file-text red"></i> document4.pdf', type: 'item'},				{text: '<i class="ace-icon fa fa-file-text grey"></i> document5.doc', type: 'item'}			]		}		tree_data_2['backup']['additionalParameters'] = {			'children' : [				{text: '<i class="ace-icon fa fa-archive brown"></i> backup1.zip', type: 'item'},				{text: '<i class="ace-icon fa fa-archive brown"></i> backup2.zip', type: 'item'},				{text: '<i class="ace-icon fa fa-archive brown"></i> backup3.zip', type: 'item'},				{text: '<i class="ace-icon fa fa-archive brown"></i> backup4.zip', type: 'item'}			]		}		var dataSource2 = function(options, callback){			var $data = null			if(!("text" in options) && !("type" in options)){				$data = tree_data_2;//the root tree				callback({ data: $data });				return;			}			else if("type" in options && options.type == "folder") {				if("additionalParameters" in options && "children" in options.additionalParameters)					$data = options.additionalParameters.children || {};				else $data = {}//no data			}						if($data != null)//this setTimeout is only for mimicking some random delay				setTimeout(function(){callback({ data: $data });} , parseInt(Math.random() * 500) + 200);			//we have used static data here			//but you can retrieve your data dynamically from a server using ajax call			//checkout examples/treeview.html and examples/treeview.js for more info		}		return {'dataSource1': dataSource1 , 'dataSource2' : dataSource2}	}});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta charset="utf-8" />
+		<title>置业绿城-经纪人编辑</title>
+
+		<meta name="description" content="Common form elements and layouts" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+		<!-- bootstrap & fontawesome -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+		<!-- page specific plugin styles -->
+		<link rel="stylesheet" href="assets/css/jquery-ui.custom.min.css" />
+		<link rel="stylesheet" href="assets/css/chosen.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-datepicker3.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-timepicker.min.css" />
+		<link rel="stylesheet" href="assets/css/daterangepicker.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
+		<link rel="stylesheet" href="assets/css/bootstrap-colorpicker.min.css" />
+		<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+		<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+		<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+		<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="assets/css/building-editor.css" />
+		<script src="assets/js/ace-extra.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="zylc/js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="zylc/js/common/variable.js" ></script><!--全局变量-->
+		<script type="text/javascript" src="zylc/js/common/fileupload.js" ></script><!--文件上传-->
+	</head>
+	<body class="no-skin">
+		<div id="navbar" class="navbar navbar-default ace-save-state">
+				<div class="navbar-header pull-left">
+					<a href="index.html" class="navbar-brand">
+						<small>
+							<i class="fa fa-leaf"></i>
+							置业绿城
+						</small>
+					</a>
+				</div>
+				<div class="navbar-buttons navbar-header pull-right" role="navigation">
+					<ul class="nav ace-nav">
+						<li class="light-blue dropdown-modal">
+							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+								<span class="user-info">
+									<small>Welcome,</small>
+									Jason
+								</span>
+								<i class="ace-icon fa fa-caret-down"></i>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+		<div class="main-container ace-save-state" id="main-container">
+			<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+				<ul class="nav nav-list">
+					<li class=" "> 
+						<a href="#">
+							<i class="menu-icon fa fa-tachometer"></i>
+							<span class="menu-text"> 工作台 </span>
+						</a>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<!--<i class="fa fa-briefcase fa-lg" ></i>-->
+							<i class="menu-icon fa fa-caret-right"></i>
+							<span class="menu-text">
+								楼盘管理
+							</span>
+							<b class="arrow fa fa-angle-down" ></b>
+						</a>
+						<b class="arrow"></b>
+						<ul class="submenu">
+							<li class="">
+								<a href="profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									楼盘列表
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									楼盘标签
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="search.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									板块排序
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="search.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									运营团队
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-list"></i>
+							<span class="menu-text"> 文章管理 </span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-pencil-square-o"></i>
+							<span class="menu-text"> 活动管理</span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="#">
+							<i class="menu-icon fa fa-list-alt"></i>
+							<span class="menu-text"> 预约列表 </span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+					<li class="">
+						<a href="#">
+							<i class="menu-icon fa fa-calendar"></i>
+							<span class="menu-text">
+								客户管理
+							</span>
+						</a>
+						<b class="arrow"></b>
+					</li>
+					<li class=" ">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-desktop"></i>
+							<span class="menu-text">
+								首页管理
+							</span>
+
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+
+						<b class="arrow"></b>
+
+						<ul class="submenu">
+							<li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+
+									Layouts
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu">
+									<li class="">
+										<a href="top-menu.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Top Menu
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="two-menu-1.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Two Menus 1
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="two-menu-2.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Two Menus 2
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="mobile-menu-1.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Default Mobile Menu
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="mobile-menu-2.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Mobile Menu 2
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+
+									<li class="">
+										<a href="mobile-menu-3.html">
+											<i class="menu-icon fa fa-caret-right"></i>
+											Mobile Menu 3
+										</a>
+
+										<b class="arrow"></b>
+									</li>
+								</ul>
+							</li>
+
+							<li class="">
+								<a href="typography.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Typography
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+
+							<li class="">
+								<a href="elements.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									Elements
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="#" class="dropdown-toggle">
+									<i class="menu-icon fa fa-caret-right"></i>
+
+									Three Level Menu
+									<b class="arrow fa fa-angle-down"></b>
+								</a>
+
+								<b class="arrow"></b>
+
+								<ul class="submenu">
+									<li class="">
+										<a href="#" class="dropdown-toggle">
+											<i class="menu-icon fa fa-pencil orange"></i>
+
+											4th level
+											<b class="arrow fa fa-angle-down"></b>
+										</a>
+
+										<b class="arrow"></b>
+
+										<ul class="submenu">
+											<li class="">
+												<a href="#">
+													<i class="menu-icon fa fa-plus purple"></i>
+													Add Product
+												</a>
+
+												<b class="arrow"></b>
+											</li>
+
+											<li class="">
+												<a href="#">
+													<i class="menu-icon fa fa-eye pink"></i>
+													View Products
+												</a>
+
+												<b class="arrow"></b>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-tag"></i>
+							<span class="menu-text"> 公告管理</span>						
+						</a>					
+					</li>
+					<li class="">
+						<a href="#" class="dropdown-toggle">
+							<i class="menu-icon fa fa-file-o"></i>
+							<span class="menu-text">
+								系统管理
+							</span>
+							<b class="arrow fa fa-angle-down" ></b>
+						</a>
+						<ul class="submenu">
+							<li class="">
+								<a href="user-management.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									用户管理
+								</a>
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="profile.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									菜单管理
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="timeline.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									角色管理
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+							<li class="">
+								<a href="search.html">
+									<i class="menu-icon fa fa-caret-right"></i>
+									字典管理
+								</a>
+
+								<b class="arrow"></b>
+							</li>
+						</ul>
+					</li>
+				</div>
+			</div><!-- /.navbar-container -->
+		</div>
+
+		<div class="main-container ace-save-state" id="main-container">
+			<script type="text/javascript">
+				try{ace.settings.loadState('main-container')}catch(e){}
+			</script>
+
+			<div id="sidebar" class="sidebar  responsive  ace-save-state">
+				<script type="text/javascript">
+					try{ace.settings.loadState('sidebar')}catch(e){}
+				</script>
+			</div>
+
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+						<ul class="breadcrumb">
+							<li>
+								楼盘列表/楼盘经纪人/编辑经纪人
+							</li>
+						</ul><!-- /.breadcrumb -->
+					</div>
+					<div class="page-content">
+						<!-- <div class="page-header">
+							<h1>
+								基本信息
+							</h1>
+						</div> --><!-- /.page-header -->
+
+						<div class="row">
+							<div class="col-xs-12">
+								<!-- PAGE CONTENT BEGINS -->
+								<form class="form-horizontal" role="form">
+									<!-- 用户ID -->
+									<input type="hidden" id="doId" />
+									<div class="space-4"></div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-5">头像：</label>
+										  	<img alt="请选择头像" src="" id="showpic" class="be-chooseimg"><br />
+										  	<input type="file" name="upfile" id="upfile" class="col-xs-10 col-sm-5 be-choosefile"/>
+											<p class="be-p">提示：图片大小建议不能超过200k。</p>
+											<input type="button" class="be-ajax" value="Ajax提交" onclick="fileupload('showpic','upfile')" >
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-2">经纪人姓名：</label>
+
+										<div class="col-sm-9">
+											<input id="userRealName" type="text" id="form-field-2" class="col-xs-10 col-sm-5" />
+											<span class="help-inline col-xs-12 col-sm-7">
+												<!--<span class="middle">Inline help text</span>-->
+											</span>
+										</div>
+									</div>
+
+									<div class="space-4"></div>
+
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-input-readonly"> 所属城市：</label>
+
+										<div class="col-sm-9">
+											<input id="city" type="text" class="col-xs-10 col-sm-5" id="form-input-readonly"/>
+										</div>
+									</div>
+
+									<div class="space-4"></div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-5">负责楼盘：</label>
+										<div class="col-sm-9">
+											<input id="chargeEstate" type="text" class="col-xs-10 col-sm-5" id="form-input-readonly"/>
+										</div>	
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-5">手机号码：</label>
+										<div class="col-sm-9">
+											<input id="phone" type="text" class="col-xs-10 col-sm-5" id="form-input-readonly"/>
+										</div>	
+									</div>
+									<div class="form-group">
+										<label class="col-sm-3 control-label no-padding-right" for="form-field-5">经纪人描述：</label>
+										<div class="col-sm-9">
+											<input id="userDesc" type="text" class="col-xs-10 col-sm-5" id="form-input-readonly" placeholder="10个字以内" />
+										</div>	
+									</div>
+									<div class="page-content">
+							<div class="form-group">
+								<div class="space-4"></div>
+									<div class="clearfix form-actions">
+										<div class="col-md-offset-3 col-md-9">
+											<button onclick="save()" class="btn btn-info" type="button">
+												<i class="ace-icon fa fa-check bigger-110"></i>
+												保存
+											</button>
+											&nbsp; &nbsp; &nbsp;
+											<button onclick="back()" class="btn" type="reset">
+												<i class="ace-icon fa fa-undo bigger-110"></i>
+												返回
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.span -->
+			</div>
+		
+									<!--按钮-->
+									<!--<div class="form-group">
+										<div class="controls col-xs-12 col-sm-9">
+											<div class="row">
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-2" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-3" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch" type="checkbox" />
+														<span class="lbl" data-lbl="CUS&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TOM"></span>
+													</label>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-4" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-5" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-6" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-7" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch btn-rotate" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-4 btn-rotate" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-4 btn-empty" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+
+												<div class="col-xs-3">
+													<label>
+														<input name="switch-field-1" class="ace ace-switch ace-switch-4 btn-flat" type="checkbox" />
+														<span class="lbl"></span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div><!- /.page-content -->
+				<!--</div>-->
+			<!--</div> /.main-content-->
+			<a href="#" id="btn-scroll-up" class="btn-scroll-up btn btn-sm btn-inverse">
+				<i class="ace-icon fa fa-angle-double-up icon-only bigger-110"></i>
+			</a>
+		</div><!-- /.main-container -->
+
+		<!-- basic scripts -->
+
+		<!--[if !IE]> -->
+		<script src="assets/js/jquery-2.1.4.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<![endif]-->
+		<script type="text/javascript">
+			if('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+		</script>
+		<script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- page specific plugin scripts -->
+
+		<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+		<script src="assets/js/jquery-ui.custom.min.js"></script>
+		<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="assets/js/chosen.jquery.min.js"></script>
+		<script src="assets/js/spinbox.min.js"></script>
+		<script src="assets/js/bootstrap-datepicker.min.js"></script>
+		<script src="assets/js/bootstrap-timepicker.min.js"></script>
+		<script src="assets/js/moment.min.js"></script>
+		<script src="assets/js/daterangepicker.min.js"></script>
+		<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+		<script src="assets/js/bootstrap-colorpicker.min.js"></script>
+		<script src="assets/js/jquery.knob.min.js"></script>
+		<script src="assets/js/autosize.min.js"></script>
+		<script src="assets/js/jquery.inputlimiter.min.js"></script>
+		<script src="assets/js/jquery.maskedinput.min.js"></script>
+		<script src="assets/js/bootstrap-tag.min.js"></script>
+
+		<!-- ace scripts -->
+		<script src="assets/js/ace-elements.min.js"></script>
+		<script src="assets/js/ace.min.js"></script>
+
+		<!-- inline scripts related to this page -->
+		<script type="text/javascript">
+			var token = "80D10061900060F21442500541D573A68666A1E64425A982E3C_A_F_1_5_0_C_";
+			jQuery(function($) {
+				alert(getParam("id"));
+				$.ajax({
+					type: "post",
+					headers: {
+						'Accept': 'application/x-www-form-urlencoded;charset=utf-8'
+					},
+					url: "http://10.100.24.205:8080//manager/3.0/building_broker/info",
+					dataType: 'json',
+					data: {
+						token: token,
+						pageLimit: 10,
+						id:getParam("id")
+					},
+					success: function(result) {
+						console.log(result.data);
+						item = result.data;
+						
+						$("#showpic").attr("src",item.photo);
+						$("#userRealName").val(item.userRealName);
+						$("#phone").val(item.phone);
+						$("#userDesc").val(item.userDesc);
+						$("#chargeEstate").val(item.chargeEstate);
+						$("#city").val(item.city);
+						$("#doId").val(item.id);
+					}
+				});
+				
+			});
+			
+			function back(){
+				window.location.replace("buyers-consultant.html");
+			}
+			
+			function save(){
+				$.ajax({
+						type: "post",
+						headers: {
+							'Accept': 'application/x-www-form-urlencoded;charset=utf-8'
+						},
+						url: "http://10.100.24.205:8080//manager/3.0/building_broker/modify",
+						dataType: 'json',
+						data: {
+							token: token,
+							pageLimit: 10,
+							id:getParam("id"),
+							photo: $("#showpic").attr("src"),
+							userRealName:$("#userRealName").val(),
+							phone:$("#phone").val(),
+							userDesc:$("#userDesc").val(),
+							chargeEstate:$("#chargeEstate").val(),
+							city:$("#city").val()
+						},
+						success: function(result) {
+							if("0"==result.code)
+							window.location.replace("buyers-consultant.html");
+						}
+					});
+			}
+			
+			// 获取url？后id
+			function getParam(paramName) {
+				paramValue = "", isFound = !1;
+				if(this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+					arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+					while(i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() == paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+				}
+				return paramValue == "" && (paramValue = null), paramValue
+			}
+			
+			
+			
+				
+			
+			
+		</script>
+	</body>
+</html>

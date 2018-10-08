@@ -1,0 +1,156 @@
+*{
+	list-style:none ;
+	outline: none; 
+	text-decoration: none;
+}
+.no-skin{
+	overflow: hidden;
+}
+li:before{
+	display: none;
+}
+.select-content{
+	left: 772px;
+	top: 75px;
+	width: 98px;
+	height: 30px;
+	line-height: 20px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	border-radius: 4px;
+}
+.input{
+	width: 209px;
+	height: 28px;
+	left: 479px;
+	top: 76px;
+	border-radius: 4px;
+	color: rgba(136, 136, 136, 1);
+	font-size: 12px;
+	text-align: left;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+}
+.active{
+	border-radius:4px ;
+}
+.sousuo{
+	border-radius: 4px;
+	width: 45px;
+	height: 28px;
+	font-size: 12px;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	text-align: center;
+	padding-top: 2px;
+	margin: 0;
+}
+.sousuo a{
+	color:rgba(136, 136, 136, 1);
+	text-decoration: none;
+	outline: none;
+}
+.breadcrumb li{
+	margin-left: 10px;
+}
+.new-building{
+	width: 80px;
+	height: 30px;
+	border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	float: right;
+	margin: 10px;
+	padding-top: 2px;
+}
+.new-building a{
+	color: #101010;
+	outline: none;
+	text-decoration: none;
+}
+input[type=text]{
+	border-radius: 4px!important;
+}
+.row{
+	clear: both;
+}
+.two-chose li{
+	margin-left:15px;
+	margin-right:15px;
+}
+.hidden-480 li{
+	float: left;
+}
+.hidden-480 a{
+	text-decoration: none;
+	margin-right: 9px;
+}
+thead th{
+	text-align: center;
+}
+tbody td{
+	text-align: center;
+}
+/*楼盘标签*/
+.opening-information{
+	/*margin: 0 auto;*/
+	width: 410px;
+	height: 289px;
+	/*line-height: 20px;*/
+	text-align: center;
+	border: 1px solid rgba(187, 187, 187, 1);
+	margin-bottom: 40px;
+	position: absolute;
+	top: 10px;
+	left: 30%;
+	background: #fff;
+	z-index: 120;
+  	display: none;
+}
+.table>tbody>tr>td{   
+	border-top: none;
+}
+.font-color{
+	color: rgba(16, 16, 16, 1);
+	font-size: 10px;
+	font-family: Roboto;
+}
+.submit{
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	  border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	margin: 0 auto;
+	cursor: pointer;
+}
+ .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: #666;
+  opacity: 0.5;
+  filter: alpha(opacity=50)-moz-opacity: 0.5;
+  display: none;
+}
+.new-lab{
+	margin: 10px 0 10px 0;
+}
+.bl-del{
+	display: inline-block;
+	float: right;
+	margin-right: 15px;
+	cursor: pointer;
+}

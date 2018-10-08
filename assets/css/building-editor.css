@@ -1,0 +1,109 @@
+
+.main-content-inner{
+	overflow-x: hidden;
+}
+.page-header{
+	/*background: rgba(102, 102, 102, 1);*/
+	width: 100%;
+}
+.page-header h1{
+	text-decoration: 
+	text-indent: 25px;
+}
+.select-content{
+	/*left: 394px;
+	top: 297px;sss
+	width: 90px;
+	height: 30px;*/
+	line-height: 20px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	border-radius: 4px;
+}
+.geographic{
+	padding-left: 6px ;
+	line-height: 32px;
+}
+a:hover{
+	text-decoration: none;
+}
+.delete{
+	cursor: pointer;
+	position: absolute;
+    top: 30px;
+    left: 352px;
+}
+.audio{
+	margin-top: 20px;
+}
+.audio-content{
+	margin-top: 11px;
+	width: 200px;
+	margin-left: 16px;
+}
+.file {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    margin-bottom: 11px;
+}
+.file input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+}
+.file:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+
+.building-news{
+	margin-left: 40px;
+}
+.distance{
+	margin-bottom:80px ;
+}
+
+.gw-sousuo{
+	border-radius: 4px;
+	width: 100px;
+	line-height: 23px;
+	height: 28px;
+	font-size: 12px;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	text-align: center;
+	margin-bottom: 8px;
+}
+.gw-sousuo a{
+	color:rgba(136, 136, 136, 1);
+	text-decoration: none;
+	outline: none;
+}
+li:before{
+	display: none;
+}
+/*=======编辑户型图======*/
+.breadcrumb>li /*.breadcrumb>li.active*/ {
+     padding: 0; 
+}
+.layout-bor{
+	width: 451px;
+	height:100px;
+	border: 1px solid #D5D5D5;
+	margin-left: 9px;
+}

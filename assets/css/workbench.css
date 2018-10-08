@@ -1,0 +1,40 @@
+*{
+	list-style: none;
+}
+td {
+	font-size: 28px;
+	border-bottom: none;
+}
+td span {
+	font-size: 14px;
+    text-indent: 38px;
+    display: inline-block;
+}
+table{
+	margin-top: 120px;
+	margin-left:20px ;
+}
+.table>tbody>tr>td {
+    border-top: none;
+    border-bottom: none;
+    padding :20px;
+}
+.table-footer td{
+	width: 200px;
+	height: 100px;
+	line-height: 20px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Roboto;
+	border: 1px solid rgba(187, 187, 187, 1);
+}
+tbody td{
+	margin:0 8px 0 8px;
+}
+.table-footer td a{
+	text-decoration: none;
+	outline: none;
+/*	color: rgba(187, 187, 187, 1);*/
+	cursor:pointer;
+}

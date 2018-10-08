@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta charset="utf-8" />
+	<title>置业绿城-公告管理</title>
+	<meta name="description" content="overview &amp; stats" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<!-- bootstrap & fontawesome -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/font-awesome/4.5.0/css/font-awesome.min.css" />
+	<!-- page specific plugin styles -->
+	<!-- text fonts -->
+	<link rel="stylesheet" href="assets/css/fonts.googleapis.com.css" />
+	<!-- ace styles -->
+	<link rel="stylesheet" href="assets/css/ace.min.css" class="ace-main-stylesheet" id="main-ace-style" />
+	<!--[if lte IE 9]>
+			<link rel="stylesheet" href="assets/css/ace-part2.min.css" class="ace-main-stylesheet" />
+		<![endif]-->
+	<link rel="stylesheet" href="assets/css/ace-skins.min.css" />
+	<link rel="stylesheet" href="assets/css/ace-rtl.min.css" />
+	<!--<link rel="stylesheet" href="assets/css/building-list.css" />-->
+	<link rel="stylesheet" href="assets/css/notic.css" />
+	<!--[if lte IE 9]>
+		  <link rel="stylesheet" href="assets/css/ace-ie.min.css" />
+		<![endif]-->
+	<!-- inline styles related to this page -->
+	<!-- ace settings handler -->
+	<script src="assets/js/ace-extra.min.js"></script>
+	<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
+	<!--[if lte IE 8]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+</head>
+
+<body class="no-skin">
+	<div id="navbar" class="navbar navbar-default ace-save-state">
+		<div class="navbar-header pull-left">
+			<a href="index.html" class="navbar-brand">
+				<small>
+					<i class="fa fa-leaf"></i>
+					置业绿城
+				</small>
+			</a>
+		</div>
+		<div class="navbar-buttons navbar-header pull-right" role="navigation">
+			<ul class="nav ace-nav">
+				<li class="light-blue dropdown-modal">
+					<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+						<span class="user-info">
+							<small>Welcome,</small>
+							Jason
+						</span>
+						<i class="ace-icon fa fa-caret-down"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- /.navbar-container -->
+	</div>
+	<div class="main-container ace-save-state" id="main-container">
+		<div id="sidebar" class="sidebar                  responsive                    ace-save-state">
+			<script type="text/javascript">
+				try {
+					ace.settings.loadState('sidebar')
+				} catch (e) {}
+			</script>
+			<ul class="nav nav-list">
+				<li class=" ">
+					<a href="#">
+						<i class="menu-icon fa fa-tachometer"></i>
+						<span class="menu-text"> 工作台 </span>
+					</a>
+				</li>
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<!--<i class="fa fa-briefcase fa-lg" ></i>-->
+						<i class="menu-icon fa fa-caret-right"></i>
+						<span class="menu-text">
+							楼盘列表
+						</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+					<b class="arrow"></b>
+					<ul class="submenu">
+						<li class="">
+							<a href="profile.html">
+								<i class="menu-icon fa fa-caret-right"></i> 楼盘列表
+							</a>
+
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="timeline.html">
+								<i class="menu-icon fa fa-caret-right"></i> 楼盘标签
+							</a>
+
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="search.html">
+								<i class="menu-icon fa fa-caret-right"></i> 板块排序
+							</a>
+
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-list"></i>
+						<span class="menu-text"> 文章管理 </span>
+					</a>
+					<b class="arrow"></b>
+				</li>
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-pencil-square-o"></i>
+						<span class="menu-text"> 活动管理</span>
+					</a>
+					<b class="arrow"></b>
+				</li>
+				<li class="">
+					<a href="#">
+						<i class="menu-icon fa fa-list-alt"></i>
+						<span class="menu-text"> 预约列表 </span>
+					</a>
+					<b class="arrow"></b>
+				</li>
+				<li class="">
+					<a href="#">
+						<i class="menu-icon fa fa-calendar"></i>
+						<span class="menu-text">
+							用户管理
+						</span>
+					</a>
+					<b class="arrow"></b>
+				</li>
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-picture-o"></i>
+						<span class="menu-text"> 首页管理</span>
+						<b class="arrow fa fa-angle-down"></b>
+					</a>
+					<b class="arrow"></b>
+					<ul class="submenu">
+						<li class="">
+							<a href="profile.html">
+								<i class="menu-icon fa fa-caret-right"></i> User Profile
+							</a>
+
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="timeline.html">
+								<i class="menu-icon fa fa-caret-right"></i> Timeline
+							</a>
+
+							<b class="arrow"></b>
+						</li>
+						<li class="">
+							<a href="search.html">
+								<i class="menu-icon fa fa-caret-right"></i> Search Results
+							</a>
+
+							<b class="arrow"></b>
+						</li>
+					</ul>
+				</li>
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-tag"></i>
+						<span class="menu-text"> 搜索管理</span>
+					</a>
+				</li>
+				<li class="">
+					<a href="#" class="dropdown-toggle">
+						<i class="menu-icon fa fa-file-o"></i>
+						<span class="menu-text">
+							系统管理
+						</span>
+					</a>
+				</li>
+				<li class="">
+					<a href="#">
+						<i class="menu-icon fa fa-list-alt"></i>
+						<span class="menu-text"> 绿粉汇</span>
+					</a>
+					<b class="arrow"></b>
+				</li>
+		</div>
+		<!--顶部-->
+		<div class="main-content">
+			<div class="main-content-inner">
+				<div class="breadcrumbs ace-save-state" id="breadcrumbs">
+					<ul class="breadcrumb">
+						<li>
+							公告名称&nbsp;:
+							<input class="input" type="text" id="noticeName" placeholder="输入标签名称" style="border-radius: 6px;margin-left: 0.8rem;" />
+						</li>
+						<li>
+							发布状态：
+							<select class="select-content" name="selse" id="statusTo">
+								<option value="">全部</option>
+								<option value="1">已发布</option>
+								<option value="0">未发布</option>
+							</select>
+						</li>
+						<li>
+							创建时间：
+							<input type="date" id="beginTime" />
+						</li>
+						<li>
+							至&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input type="date" id="endTime" />
+						</li>
+						<li>
+							<div class="sousuo">
+								<a href="javascript:void(0)" onclick="dataList()">搜索</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<!--新建楼盘-->
+				<div class="new-building">
+					<a href="notice-edit.html">
+						新增公告
+					</a>
+				</div>
+				<!--中间显示页面-->
+				<div class="row">
+					<div class="col-xs-12">
+						<!-- PAGE CONTENT BEGINS -->
+						<div class="row">
+							<div class="col-xs-12">
+								<table id="simple-table" class="table  table-bordered table-hover">
+									<thead>
+										<tr>
+											<th>序号</th>
+											<th>公告标题</th>
+											<th>公告内容</th>
+											<th>发布时间</th>
+											<th>发布状态</th>
+											<th class="hidden-480">发布人</th>
+											<th class="hidden-480">操作</th>
+
+										</tr>
+									</thead>
+
+									<tbody id="notices">
+
+									</tbody>
+								</table>
+							</div>
+							<!-- /.span -->
+						</div>
+						<!-- /.row -->
+</body>
+
+</html>
+
+<script src="assets/js/jquery-2.1.4.min.js"></script>
+<!-- <![endif]-->
+<!--[if IE]>
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+		<![endif]-->
+<script type="text/javascript">
+	if ('ontouchstart' in document.documentElement) document.write("<script src='assets/js/jquery.mobile.custom.min.js'>" +
+		"<" + "/script>");
+</script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- page specific plugin scripts -->
+<!--[if lte IE 8]>
+		  <script src="assets/js/excanvas.min.js"></script>
+		<![endif]-->
+<script src="assets/js/jquery-ui.custom.min.js"></script>
+<script src="assets/js/jquery.ui.touch-punch.min.js"></script>
+<script src="assets/js/jquery.easypiechart.min.js"></script>
+<script src="assets/js/jquery.sparkline.index.min.js"></script>
+<script src="assets/js/jquery.flot.min.js"></script>
+<script src="assets/js/jquery.flot.pie.min.js"></script>
+<script src="assets/js/jquery.flot.resize.min.js"></script>
+<!-- ace scripts -->
+<script src="assets/js/ace-elements.min.js"></script>
+<script src="assets/js/ace.min.js"></script>
+<!-- inline scripts related to this page -->
+<script type="text/javascript">
+	var token = "9061E0D14040C0A2473034D041C54376B5B6475218510768A4F_B_E_2_6_C_8_";
+	// 获取url？后id
+	function getParam(paramName) {
+		paramValue = "", isFound = !1;
+		if (this.location.search.indexOf("?") == 0 && this.location.search.indexOf("=") > 1) {
+			arrSource = unescape(this.location.search).substring(1, this.location.search.length).split("&"), i = 0;
+			while (i < arrSource.length && !isFound) arrSource[i].indexOf("=") > 0 && arrSource[i].split("=")[0].toLowerCase() ==
+				paramName.toLowerCase() && (paramValue = arrSource[i].split("=")[1], isFound = !0), i++
+		}
+		return paramValue == "" && (paramValue = null), paramValue
+	}
+	
+	
+	$(function () {
+		
+		dataList();
+		
+	})
+	
+	/**
+	* 查询列表
+	*/
+	function dataList(){
+		var a=$("#status").find("option:selected").attr("value");
+			$.ajax({
+			type: "post",
+			headers: {
+				'Accept': 'application/x-www-form-urlencoded;charset=utf-8'
+			},
+			url: "http://10.100.25.126:8180/manager/3.0/content/notice/list",
+			dataType: 'json',
+			data: {
+				token: token,
+				pageLimit: 30,
+				noticeName:$("#noticeName").val(),
+				status:$("#statusTo").val(),
+				beginTime:$("#beginTime").val(),
+				endTime:$("#endTime").val()
+			},
+			success: function (result) {
+				console.log(result.data.pageListData);
+				/**
+				 * 文章类别
+				 */
+				$("#notices").html('');
+				var str = "";
+				$.each(result.data.pageListData, function (i, item) {
+
+					/**
+					 * 发布状态
+					 */
+					var status;
+					var look="查看";
+					var edit="编辑";
+					var doStatus="发布";
+					var cancels="下架";
+					var del="删除";
+					if ("0" == item.status){
+						status = "未发布";
+						cancels="";
+					}
+					else if ("1" == item.status){
+						status = "已发布";
+						doStatus="";
+						edit="";
+						del="";
+					}
+					else status = "未知";
+					str += '<tr>';
+					str += '<td>' +(i+1) + '</td>';
+					str += '<td class="center">' + item.noticeName + '</td>';
+					str += '<td class="hidden-480">' + item.content + '</td>';
+					str += '<td class="hidden-480">' + item.createTime + '</a></td>';
+					str += '<td>' + status + '</td>';
+					str += '<td>' + item.creator + '</td>';
+					str += '<td><a href="notice-edit.html?id=' + item.id + '">'+look+'</a>&nbsp;&nbsp;<a href="javascript:void(0)" onclick="doStatus(\'' + item.id+ '\',\'' +item.status + '\')">'+doStatus+'</a>&nbsp;&nbsp;<a href="notice-edit.html?id=' + item.id +
+						'">'+edit+'</a>&nbsp;&nbsp;<a href="#" onclick=doDelete(\'' + item.id + '\') style="" >'+del+'</a>&nbsp;&nbsp;<a href="#" onclick=doCancel(\'' + item.id+ '\',\'' +item.status + '\') >'+cancels+'</a></td>';
+					str += '</tr>';
+				});
+				str += "";
+				$("#notices").append(str);
+
+			}
+		});
+	};
+	
+	/**
+		* 删除数据
+		*/
+	function doDelete(key) {
+		$.ajax({
+		type: "post",
+		headers: {
+			'Accept': 'application/x-www-form-urlencoded;charset=utf-8'
+		},
+		url: "http://10.100.26.247:8180/manager/3.0/content/notice/discard",
+		dataType: 'json',
+		data: {
+			token: token,
+			id: key
+		},
+		success: function (result) {
+			console.log(result.data);
+			if(1==result.data){
+				alert("数据删除成功！！！");
+				dataList();
+			} 
+			else alert("数据删除失败！！！");
+			}
+		});
+
+	};
+	
+	
+	
+	/**
+	 * 文章发布
+	 */
+	function doStatus(i, s) {
+		edit(i, "0" == s ? "1" : "0");
+	};
+
+	/**
+	 *文章下架（取消发布）
+	 */
+	function doCancel(i, h) {
+		edit(i, "1" == h ? "0" : "1");
+	};
+	
+	
+	
+	function edit(ids,s){
+		$.ajax({
+		type: "post",
+		headers: {
+			'Accept': 'application/x-www-form-urlencoded;charset=utf-8'
+		},
+		url: "http://10.100.26.247:8180/manager/3.0/content/notice/modify",
+		dataType: 'json',
+		data: {
+			token: token,
+			id: ids,
+			status:s
+		},
+		success: function (result) {
+			console.log(result.data);
+			if(1==result.data){
+				alert("公告发布成功！！！");
+				dataList();
+			}
+			else alert("公告发布失败！！！");
+			}
+		});
+	}
+	
+	
+	
+</script>
+
+</html>

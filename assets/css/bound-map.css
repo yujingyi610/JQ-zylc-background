@@ -1,0 +1,67 @@
+.form-group>label[class*=col-] {
+    margin-bottom: 0;
+}
+.form-horizontal .form-group {
+    margin-left: -200px;
+}
+.map-choose{
+	width: 112px;
+	height: 30px;
+	line-height: 28px;
+	border-radius: 4px;
+	color: rgba(16, 16, 16, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid rgba(187, 187, 187, 1);
+	margin: 5px 0 0 12px ;
+}
+.map-choose a{
+	outline: none;
+	text-decoration: none;
+	cursor: pointer;
+}
+.table {
+	margin-bottom: 80px;
+}
+.table td img{
+	width: 150px;
+	height: 90px;
+}
+.pop-up{
+	margin: 0 auto;
+	width: 800px;
+	/*height: 800px;*/
+	border: 1px solid;
+}
+.pop-up h5{
+	text-align: center;
+	margin-bottom: 15px;
+}
+.table>tbody>tr>td{
+	border-top:none; 
+}
+.save-delet{
+	left: 460px;
+	position: absolute;
+	left: 480px;
+}
+.save-delet ul li{
+	width: 80px;
+	height: 30px;
+	line-height: 28px;
+	border-radius: 4px;
+	background-color: rgba(229, 28, 35, 1);
+	color: rgba(255, 255, 255, 1);
+	font-size: 14px;
+	text-align: center;
+	font-family: Microsoft Yahei;
+	border: 1px solid;
+	display: inline-block;
+	
+}
+.form-actions{
+	border-top: none;
+	background: none;
+	text-align: center; 
+}

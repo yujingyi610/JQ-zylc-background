@@ -1,0 +1,38 @@
+*{
+	list-style:none ;
+	outline: none; 
+	text-decoration: none;
+}
+.main-content-inner{
+	overflow-x: hidden;
+}
+.header-p{
+	display: inline-block;
+}
+.header-ul li{
+	float: left;
+}
+.breadcrumbs{
+	border: none;
+	background: none;
+} 
+.bu-news{
+	margin-left: 20px;
+	display: inline-block;
+}
+.bu-news li{
+	float: left;
+	margin-right: 25px;
+}
+.table-ul li{
+	float: left;
+	margin: 0 6px 0 6px;
+}
+thead th{
+	text-align: center;
+	vertical-align: middle;
+}
+tbody td{
+	text-align: center;
+	vertical-align: middle;
+}

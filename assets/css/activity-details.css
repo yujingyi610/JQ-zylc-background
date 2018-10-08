@@ -1,0 +1,8 @@
+.breadcrumb>li, .breadcrumb>li.active {
+     padding: 0; 
+}
+.breadcrumb li a{
+	text-decoration: none;
+	outline: none;
+	color:#555;
+}
